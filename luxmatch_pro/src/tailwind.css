@@ -1,0 +1,28 @@
+/*
+ This file provides minimal Tailwind CSS for custom palette.
+ Tailwind must be included using postcss, CDN, or build-tool config.
+ If not already present in the build, the following is required:
+ @tailwind base;
+ @tailwind components;
+ @tailwind utilities;
+
+ The color palette and custom classes are matched to
+  - primary: #1A202C
+  - secondary: #F7FAFC
+  - accent: #D97706
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom palette overrides */
+.bg-primary { background-color: #1A202C; }
+.text-primary { color: #1A202C; }
+.bg-secondary { background-color: #F7FAFC; }
+.text-secondary { color: #F7FAFC; }
+.text-accent, .text-amber-700 { color: #D97706; }
+.bg-accent, .bg-amber-700 { background-color: #D97706; }
+.bg-amber-100 { background-color: #FDF6EC; }
+.text-amber-800 { color: #B45309; }
+.border-accent, .border-amber-700 { border-color: #D97706; }

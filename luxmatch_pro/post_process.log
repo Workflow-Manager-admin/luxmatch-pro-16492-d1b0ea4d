@@ -1,0 +1,10 @@
+npm ERR! code ENOTEMPTY
+npm ERR! syscall rename
+npm ERR! path /home/kavia/workspace/code-generation/luxmatch-pro-16492-d1b0ea4d/luxmatch_pro/node_modules/postcss
+npm ERR! dest /home/kavia/workspace/code-generation/luxmatch-pro-16492-d1b0ea4d/luxmatch_pro/node_modules/.postcss-0pxxXn4P
+npm ERR! errno -39
+npm ERR! ENOTEMPTY: directory not empty, rename '/home/kavia/workspace/code-generation/luxmatch-pro-16492-d1b0ea4d/luxmatch_pro/node_modules/postcss' -> '/home/kavia/workspace/code-generation/luxmatch-pro-16492-d1b0ea4d/luxmatch_pro/node_modules/.postcss-0pxxXn4P'
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2025-05-29T15_16_40_312Z-debug-0.log
+Process failed with exit code 217

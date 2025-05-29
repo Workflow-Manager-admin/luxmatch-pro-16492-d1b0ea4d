@@ -56,23 +56,20 @@ function ProfileSection({ profile, setProfile }) {
     reader.onload = function (ev) {
       const text = ev.target.result;
       const sampleSkills = ["Leadership", "JavaScript", "Project Management"];
-      setProfile((p) => ({
-        ...p,
-        name: p.name || "Resume User",
-        skills: p.skills.length ? p.skills : sampleSkills,
-        experience: p.experience || "3 years at Example Inc.",
-        goals: p.goals || "Grow as a Lead Developer",
-      }));
-      localStorage.setItem(
-        "luxmatch_profile",
-        JSON.stringify({
-          ...p,
-          name: p.name || "Resume User",
-          skills: p.skills.length ? p.skills : sampleSkills,
-          experience: p.experience || "3 years at Example Inc.",
-          goals: p.goals || "Grow as a Lead Developer",
-        })
-      );
+      setProfile((prevProfile) => {
+        const updatedProfile = {
+          ...prevProfile,
+          name: prevProfile.name || "Resume User",
+          skills: prevProfile.skills.length ? prevProfile.skills : sampleSkills,
+          experience: prevProfile.experience || "3 years at Example Inc.",
+          goals: prevProfile.goals || "Grow as a Lead Developer",
+        };
+        localStorage.setItem(
+          "luxmatch_profile",
+          JSON.stringify(updatedProfile)
+        );
+        return updatedProfile;
+      });
     };
     reader.readAsText(file);
   }

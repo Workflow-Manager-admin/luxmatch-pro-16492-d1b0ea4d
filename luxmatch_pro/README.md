@@ -75,6 +75,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 ### Deployment
 
+For production deployment, run:
+
+```bash
+npm run build
+```
+
+This creates an optimized production build in the `build` directory.
+
+#### Production Environment Setup
+
+- Ensure any sensitive or environment-specific configuration is set using `.env.production` or `.env` files (see [Create React App Env Docs](https://create-react-app.dev/docs/adding-custom-environment-variables/)).
+- Set `NODE_ENV=production` for best performance.
+- Review dependencies in `package.json` and ensure no development tools or hardcoded test data remain.
+
+#### Serving the App
+
+You can serve the production build with any static site host or simple server (e.g. using [`serve`](https://www.npmjs.com/package/serve)):
+
+```bash
+npm install -g serve
+serve -s build
+```
+
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
 ### `npm run build` fails to minify

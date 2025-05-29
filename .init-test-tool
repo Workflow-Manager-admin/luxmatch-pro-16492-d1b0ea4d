@@ -1,0 +1,4 @@
+{
+    "command": "npm run test",
+    "working_directory": "/home/kavia/workspace/code-generation/luxmatch-pro-16492-d1b0ea4d/luxmatch_pro"
+}
